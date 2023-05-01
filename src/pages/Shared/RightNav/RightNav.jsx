@@ -1,9 +1,10 @@
 import React from 'react';
+import LoginAndFindUs from '../LoginAndFindUs/LoginAndFindUs';
 
 const RightNav = () => {
     return (
         <div>
-            Right nav
+            <LoginAndFindUs />
         </div>
     );
 };
