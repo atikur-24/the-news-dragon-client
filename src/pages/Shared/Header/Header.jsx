@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from '../../../assets/logo.png'
 import moment from 'moment/moment';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Marquee from 'react-fast-marquee';
+import TopNavbar from '../TopNavbar/TopNavbar';
 const Header = () => {
     return (
         <Container className='mb-5 pb-4'>
@@ -18,20 +19,7 @@ const Header = () => {
                 Biden Pledges Nearly $3 Billion To Ukraine In Largest U.S. Military Aid Package Yet .....
                 </Marquee> 
             </div>
-            <Navbar collapseOnSelect expand="lg" className='mt-4'>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mx-auto">
-                    <Nav.Link href="#features">Home</Nav.Link>
-                    <Nav.Link href="#pricing">About</Nav.Link>
-                    <Nav.Link href="#pricing">Career</Nav.Link>
-                </Nav>
-                <Nav>
-                    <Nav.Link href="#deets">profile</Nav.Link>
-                    <Button variant='dark' className='rounded-0 fw-semibold fs-5 px-5'>Login</Button>
-                </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <TopNavbar />
         </Container>
     );
 };
